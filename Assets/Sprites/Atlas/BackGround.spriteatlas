@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BackGround
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+    - {fileID: 2800000, guid: fc872f6206f75674ea06ec79f6d50235, type: 3}
+    totalSpriteSurfaceArea: 1716815
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fc872f6206f75674ea06ec79f6d50235, type: 3}
+  - {fileID: -7370474544842603096, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 7966613782443801257, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 3913114599122815333, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -2595917139947925495, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 845712851187119153, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -3268217866293315866, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 8953928095015498637, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -6544432144626302952, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 9066492588768119496, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 7111187060240500521, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 5613203434439345719, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 4560515842876753119, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -1897038533720380265, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -7337959201963605084, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 2265044071455096949, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 1632576315624311847, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 396052617276146857, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 6764986818764004753, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -8479207514492359992, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: -7080793413486813795, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  - {fileID: 371539361335204194, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BoundBG_Stage1
+  - BG_St1_bo00_23
+  - BG_St1_bo00_19
+  - BG_St1_bo00_18
+  - BG_St1_bo00_17
+  - BG_St1_bo00_16
+  - BG_St1_bo00_15
+  - BG_St1_bo00_14
+  - BG_St1_bo00_13
+  - BG_St1_bo00_12
+  - BG_St1_bo00_11
+  - BG_St1_bo00_10
+  - BG_St1_bo00_4
+  - BG_St1_bo00_5
+  - BG_St1_bo00_6
+  - BG_St1_bo00_7
+  - BG_St1_bo00_0
+  - BG_St1_bo00_1
+  - BG_St1_bo00_2
+  - BG_St1_bo00_3
+  - BG_St1_bo00_8
+  - BG_St1_bo00_9
+  m_Tag: BackGround
+  m_IsVariant: 0

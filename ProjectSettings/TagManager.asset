@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - BackGround
+  - UI
+  - Portal
+  - Wepon
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Enemy
+  - Player
+  - BackGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2298740537
+    locked: 0
+  - name: UnderUIBtn
+    uniqueID: 2960357201
+    locked: 0
+  - name: Character
+    uniqueID: 434387891
+    locked: 0
+  - name: UptoChar
+    uniqueID: 4280216385
+    locked: 0
+  - name: UIBtn
+    uniqueID: 282347441
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
