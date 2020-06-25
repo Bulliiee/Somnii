@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-// 캐릭터의 움직임 컨트롤
+// 캐릭터들의 공통 움직임 컨트롤
 public class ControllerScript : MonoBehaviour
 {
     public JoyStickSetting joystick;   // JoyStick 스크립트
+    public float HP = 100.0f;   // 체력(inspector에서 개별 조정 필요, CharacterSwitch.cs에서 체력바 조절)
     public float MoveSpeed = 4f;
 
     private Vector3 _moveVector;    // 플레이어 이동벡터
@@ -16,6 +17,8 @@ public class ControllerScript : MonoBehaviour
     private Animator animator;  // 애니메이터 가져오기
 
     public static bool isClear = false; // Portal 스크립트에서 참조
+    public static bool hitCheck = false;    // 맞는 모션동안(ture)은 무적, 맞는 모션 끝나면 false
+                                            // enemy들의 각 스크립트에서 참조
 
     void OnEnable()
     {
@@ -92,6 +95,19 @@ public class ControllerScript : MonoBehaviour
         
         // 캐릭터 벡터값, 움직이는 힘 줘서 움직이게 하기
         _transform.Translate(_moveVector * MoveSpeed * Time.deltaTime);
+    }
+
+    // 맞았을 때 애니메이션 이벤트, 체력 처리
+    public void OnHit()
+    {
+        hitCheck = true;
+        animator.SetBool("isHit", true);
+    }
+
+    public void EndHit()
+    {
+        animator.SetBool("isHit", false);
+        hitCheck = false;
     }
 
     // 룸 클리어시 알맞은 바운드 위치로 캐릭터 포지션 이동

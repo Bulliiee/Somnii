@@ -77,7 +77,7 @@ public class CharChoice : MonoBehaviour
                 nameTemp = "DPlayer2";
                 break;
             case 2:
-
+                nameTemp = "SPlayer";
                 break;
             case 3:
 
@@ -100,8 +100,8 @@ public class CharChoice : MonoBehaviour
 
     public void GoToStage()
     {
-        // 아무도 선택 안하면(나중에는 3명중 한 명이라도 안고르면)
-        if(charName[0] == "null" && charName[1] == "null" && charName[2] == "null") {
+        // 3명중 한 명이라도 안고르면
+        if(charName[0] == "null" || charName[1] == "null" || charName[2] == "null") {
             currentChoiceCharText.text = "캐릭터 선택 해야합니다.";
             return;
         }

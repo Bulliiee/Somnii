@@ -32,7 +32,7 @@ public class UiEvent : MonoBehaviour
             PauseBtn.SetActive(false);
             ActPauseBtn.SetActive(true);
             // 1은 1배속, 0.5는 0.5배속
-            Time.timeScale = 0; // 시간흐름 비율 0으로(정지)
+            //Time.timeScale = 0; // 시간흐름 비율 0으로(정지)
             //pauseOn = true; // 일시정지다
         //}
     }
@@ -45,7 +45,7 @@ public class UiEvent : MonoBehaviour
             UIBtn.SetActive(true);
             PauseBtn.SetActive(true);
             ActPauseBtn.SetActive(false);
-            Time.timeScale = 1.0f;  // 시간흐름 비율 원래대로
+            //Time.timeScale = 1.0f;  // 시간흐름 비율 원래대로
             //pauseOn = false;    // 일시정지 해제
         //}
     }
@@ -57,6 +57,7 @@ public class UiEvent : MonoBehaviour
         GameObject.Find("QuitBtn").SetActive(false);
 
         QuitApp.SetActive(true);
+        Time.timeScale = 0; // 시간흐름 비율 0으로(정지)
     }
 
     public void QuitApp_Yes() 
@@ -70,7 +71,7 @@ public class UiEvent : MonoBehaviour
         GameObject.Find("ActivePauseBtn").transform.Find("ResumeBtn").gameObject.SetActive(true);
         GameObject.Find("ActivePauseBtn").transform.Find("QuitBtn").gameObject.SetActive(true);
         QuitApp.SetActive(false);
-
+        Time.timeScale = 1.0f; // 시간흐름 비율 원래대로
     }
 
     public void PortalActive()

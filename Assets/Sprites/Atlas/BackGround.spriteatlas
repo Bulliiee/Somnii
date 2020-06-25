@@ -38,17 +38,19 @@ SpriteAtlas:
       padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 1
-      enableTightPacking: 1
+      enableRotation: 0
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
-    - {fileID: 2800000, guid: fc872f6206f75674ea06ec79f6d50235, type: 3}
-    totalSpriteSurfaceArea: 1716815
+    - {fileID: 2800000, guid: 85ceca49bfb1c4f4ca8c4bfa497e561f, type: 3}
+    - {fileID: 2800000, guid: 600107e9c04cc5e41855029850a8f700, type: 3}
+    totalSpriteSurfaceArea: 1722759
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: fc872f6206f75674ea06ec79f6d50235, type: 3}
+  - {fileID: 21300000, guid: 85ceca49bfb1c4f4ca8c4bfa497e561f, type: 3}
+  - {fileID: 21300000, guid: 600107e9c04cc5e41855029850a8f700, type: 3}
   - {fileID: -7370474544842603096, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
   - {fileID: 7966613782443801257, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
   - {fileID: 3913114599122815333, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
@@ -71,7 +73,8 @@ SpriteAtlas:
   - {fileID: -7080793413486813795, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
   - {fileID: 371539361335204194, guid: f4ba8aeb8f48ac5469bbfbbfa15ec1f8, type: 3}
   m_PackedSpriteNamesToIndex:
-  - BoundBG_Stage1
+  - BoundBG_St1
+  - DummyBG_St1
   - BG_St1_bo00_23
   - BG_St1_bo00_19
   - BG_St1_bo00_18

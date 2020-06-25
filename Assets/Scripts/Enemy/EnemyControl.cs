@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Enemy의 HP컨트롤
+// Enemy의 공통 HP컨트롤
 public class EnemyControl : MonoBehaviour
 {
-    public float HP = 100f;
-    // public static float HP = 100.0f;
-    private float currentHP;
+    public float HP = 100f; // 적의 체력 총량(inspector에서 개별 조정 필요)
+    private float currentHP;    //현재 체력
 
     // Start is called before the first frame update
     void Awake()
     {
-        HP = 100.0f;
+        //HP = 100.0f;
         currentHP = HP;
     }
 

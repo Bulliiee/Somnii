@@ -38,39 +38,47 @@ SpriteAtlas:
       padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 1
-      enableTightPacking: 1
+      enableRotation: 0
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: 764865d4280e2db4db158cbc67002461, type: 3}
     - {fileID: 2800000, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
-    - {fileID: 2800000, guid: 35278f106ed49d049b34a2b524576023, type: 3}
-    totalSpriteSurfaceArea: 579210
+    - {fileID: 2800000, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+    totalSpriteSurfaceArea: 667006
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 4605803182123773030, guid: 35278f106ed49d049b34a2b524576023, type: 3}
-  - {fileID: 3226968005077291644, guid: 35278f106ed49d049b34a2b524576023, type: 3}
-  - {fileID: 8742724209929637031, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 1464016558947793828, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 1155763484746891132, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 6052267815980243834, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -6882620711222679972, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -1372093705101622390, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -5169133867497090958, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 6797536811247612508, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 334282371921457618, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 1355192899246242393, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -3721106091064125950, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 8182031216504039200, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -2859916483712754654, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -3448294859547123527, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -2467155064581737409, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -3390182411076772934, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: -195394350492629481, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 8035326699496107636, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 3419357312867970759, guid: 764865d4280e2db4db158cbc67002461, type: 3}
-  - {fileID: 3535803521547389228, guid: 764865d4280e2db4db158cbc67002461, type: 3}
+  - {fileID: -6595680761151332689, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -273060469431498887, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 3787343402263556702, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 9094600903545770030, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 1360550569445208017, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 8586885197115800619, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 8391660652416901024, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 8160775752198118580, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 7448113381798972013, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 7843416716369364892, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -1557013538026691241, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 82707731993968007, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 1080825480604336155, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -9136572144232859775, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -3947773304791079134, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -7867266084347359734, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -4464969597253999955, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -7543061489181569089, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 7823209138725740554, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 6499865249175746193, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 568254257420953003, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 4347788266467267333, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 1001184207971911622, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -5079178053783169288, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -4657114132291979715, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -5527499082827161287, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 6546827368892410583, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 1925608543531601625, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 5732017358795156118, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: 2950200755348404279, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
+  - {fileID: -2625263914096795121, guid: 6fb63c3184fbb544f9da301f7c636987, type: 3}
   - {fileID: -8225264815004563020, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
   - {fileID: 2189510010676529607, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
   - {fileID: -2655743518466041805, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
@@ -92,28 +100,37 @@ SpriteAtlas:
   - {fileID: 7871413547306426770, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
   - {fileID: 4576928675844355861, guid: d8bc34ae40755c540b9d0c5087fcebe4, type: 3}
   m_PackedSpriteNamesToIndex:
-  - KakaoTalk_20200608_183019632_0
-  - KakaoTalk_20200608_183019632_1
-  - UIImages_33
-  - UIImages_32
-  - UIImages_40
-  - UIImages_31
-  - UIImages_30
-  - UIImages_37
-  - UIImages_36
-  - UIImages_29
-  - UIImages_35
-  - UIImages_34
-  - UIImages_39
-  - UIImages_38
-  - UIImages_0
-  - UIImages_1
-  - UIImages_18
-  - UIImages_11
-  - UIImages_13
-  - UIImages_15
-  - UIImages_14
-  - UIImages_16
+  - UI_8
+  - UI_9
+  - UI_28
+  - UI_11
+  - UI_29
+  - UI_4
+  - UI_10
+  - UI_5
+  - UI_6
+  - UI_7
+  - UI_0
+  - UI_1
+  - UI_2
+  - UI_3
+  - UI_26
+  - UI_27
+  - UI_24
+  - UI_25
+  - UI_40
+  - UI_41
+  - UI_39
+  - UI_42
+  - UI_38
+  - UI_35
+  - UI_34
+  - UI_37
+  - UI_36
+  - UI_31
+  - UI_30
+  - UI_33
+  - UI_32
   - Portal_7
   - Portal_0
   - Portal_1

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-// 캐릭터에 따른 무기 움직임 및 근접공격 처리(원거리 공격은 따로 처리)
+// 캐릭터에 따른 무기들의 공통 움직임 및 근접공격 처리(원거리 공격은 따로 처리)
 public class WeponControl : MonoBehaviour
 {
     private SpriteRenderer handRenderer;
@@ -94,7 +94,7 @@ public class WeponControl : MonoBehaviour
         if(_moveVector.x > 0) { // 좌측 타격
             animator.SetBool("isAttack", true);
             //renderer.flipX = false;
-            playerRenderer.flipX = false;
+            playerRenderer.flipX = false;   // 공격 방향에 따른 플레이어 플립x조정
         }
         else if(_moveVector.x < 0) {    // 우측 타격
             animator.SetBool("isAttack", true);
@@ -113,11 +113,22 @@ public class WeponControl : MonoBehaviour
         attackBound.offset = new Vector2(attackBound.offset.x * -1, attackBound.offset.y);
 
         if(playerRenderer.flipX) {
-            handRenderer.flipX = true;
+            handRenderer.flipX = true;  // 플레이어의 움직임에 따른 무기 플립x조정
         }
         else if(!playerRenderer.flipX) {
             handRenderer.flipX = false;
         }
+    }
+
+    // 맞았을 때 애니메이션 이벤트
+    public void OnHit()
+    {
+        animator.SetBool("isHit", true);
+    }
+
+    public void EndHit()
+    {
+        animator.SetBool("isHit", false);
     }
 
     // 근접무기 적 때리기
