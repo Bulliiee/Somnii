@@ -10,6 +10,7 @@ public class ControllerScript : MonoBehaviour
     public JoyStickSetting joystick;   // JoyStick 스크립트
     public float HP = 100.0f;   // 체력(inspector에서 개별 조정 필요, CharacterSwitch.cs에서 체력바 조절)
     public float MoveSpeed = 4f;
+    public float[] attackDamage = new float[3]; // [0]: FAttack, [1]: SAttack, [2]: TAttack Damage
 
     private Vector3 _moveVector;    // 플레이어 이동벡터
     private Transform _transform;   // 플레이어 트랜스폼
@@ -19,6 +20,7 @@ public class ControllerScript : MonoBehaviour
     public static bool isClear = false; // Portal 스크립트에서 참조
     public static bool hitCheck = false;    // 맞는 모션동안(ture)은 무적, 맞는 모션 끝나면 false
                                             // enemy들의 각 스크립트에서 참조
+    public static bool isAttack = false;    // t: 공격중, f: 공격안하는중, t일때는 움직임 제한하는 플래그, UIEvent.cs, AttackControl.cs
 
     void OnEnable()
     {
@@ -40,6 +42,9 @@ public class ControllerScript : MonoBehaviour
         // _moveVector = Vector3.zero; // 플레이어 이동벡터 초기화
         // charRenderer = GetComponent<SpriteRenderer>();
         // animator = GetComponent<Animator>();
+        attackDamage[0] = 10f;
+        attackDamage[1] = 15f;
+        attackDamage[2] = 30f;
     }
 
     // Update is called once per frame
@@ -56,7 +61,9 @@ public class ControllerScript : MonoBehaviour
     void FixedUpdate()
     {
         // 플레이어 이동
-        Move();
+        if(!isAttack && !hitCheck) {    // 공격중이거나 맞는중에는 이동 x
+            Move();
+        }
     }
 
     public void HandleInput()
@@ -78,19 +85,24 @@ public class ControllerScript : MonoBehaviour
         
         if(_moveVector.x < 0) { // 이동하는 x축벡터값 음수면
             if(!WeponControl.nowAttack) {   // 공격중이 아니라면
-                charRenderer.flipX = true;  // 스프라이트 플립
+                //charRenderer.flipX = true;  // 스프라이트 플립
+                transform.localScale = new Vector3(-1f, 1f);
             }
             // Player의 애니메이션 parameter 불값 변경
             animator.SetBool("isWalking", true);
         }
         else if(_moveVector.x > 0) {    // 양수면
             if(!WeponControl.nowAttack) {   // 공격중이 아니라면
-                charRenderer.flipX = false; // 원래대로
+                //charRenderer.flipX = false; // 원래대로
+                transform.localScale = new Vector3(1f, 1f);
             }
             animator.SetBool("isWalking", true);
         }
-        else if(_moveVector.x == 0) {   // 안움직이면
+        else if(_moveVector.x == 0 && _moveVector.y == 0) {   // 안움직이면
             animator.SetBool("isWalking", false);
+        }
+        else {
+            animator.SetBool("isWalking", true);
         }
         
         // 캐릭터 벡터값, 움직이는 힘 줘서 움직이게 하기
@@ -98,10 +110,20 @@ public class ControllerScript : MonoBehaviour
     }
 
     // 맞았을 때 애니메이션 이벤트, 체력 처리
-    public void OnHit()
+    public void OnHit(GameObject enemyObject)
     {
         hitCheck = true;
         animator.SetBool("isHit", true);
+        Vector3 distance = new Vector3(enemyObject.transform.position.x- gameObject.transform.position.x, 0f);
+
+        if(distance.x < 0 ) {    // 플레이어가 때린애보다 오른쪽에 있을 때
+            transform.localScale = new Vector3(-1f, 1f);
+            _transform.Translate(new Vector3(1f, 0f, 0f)); 
+        }
+        else {  // 플레이어가 때린애보다 왼쪽에 있을 때
+            transform.localScale = new Vector3(1f, 1f);
+            _transform.Translate(new Vector3(-1f, 0f, 0f));
+        }
     }
 
     public void EndHit()

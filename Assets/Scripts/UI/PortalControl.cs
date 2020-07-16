@@ -30,7 +30,7 @@ public class PortalControl : MonoBehaviour
     {
         // 플레이어 기준의 위치로 이동
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        Vector3 portalVector = new Vector3(player.transform.position.x, player.transform.position.y + 2.6f);
+        Vector3 portalVector = new Vector3(player.transform.position.x, player.transform.position.y + 3.5f);
         transform.position = portalVector;
     }
 
@@ -74,7 +74,10 @@ public class PortalControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {   
         if(CharacterSwitch.CharCheck && other.gameObject.tag == "Player") {
-            GameObject.Find("UIBtn").transform.Find("AttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("SAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("AttackBtnImage").gameObject.SetActive(false);
             GameObject.Find("UIBtn").transform.Find("CoralActionBtn").gameObject.SetActive(true);
             UiEvent.portalCheck = false;
         }    
@@ -83,7 +86,10 @@ public class PortalControl : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) 
     {
         if(CharacterSwitch.CharCheck && other.gameObject.tag == "Player") {
-            GameObject.Find("UIBtn").transform.Find("AttackBtn").gameObject.SetActive(true);
+            GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(true);
+            GameObject.Find("UIBtn").transform.Find("SAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("AttackBtnImage").gameObject.SetActive(true);
             GameObject.Find("UIBtn").transform.Find("CoralActionBtn").gameObject.SetActive(false);
         }
     }

@@ -267,6 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 5452237162529565988, guid: 1ee0b9afd01595a4e9c0c38de0307f77,
     type: 3}
+  HP: 100
   MoveSpeed: 5
 --- !u!61 &5033150681858149288
 BoxCollider2D:

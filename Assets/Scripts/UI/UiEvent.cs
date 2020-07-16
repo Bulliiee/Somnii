@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;  // 씬매니저 사용시 선언
 
 // 각종 버튼UI 이벤트들
@@ -12,15 +13,36 @@ public class UiEvent : MonoBehaviour
     public GameObject ActPauseBtn;   // pause 활성화시
     public GameObject QuitApp;  // QuitBtn 누를시 나타나는 패널
 
+    public GameObject character;    // 현재 캐릭터 게임오브젝트
+
     public static bool portalCheck = false; // true: 보스룸 포탈 클릭, false: 일반 룸 포탈 클릭
                                             // 포탈컨트롤 스크립트들에서 참조
+
                                             
     //private bool pauseOn = false;   // true: 일시정지중, false: 아님
+
+    void Start()
+    {
+        // 0.667
+        if(SceneManager.GetActiveScene().name == "Start") { // 스타트씬일때
+            Invoke("InvokeStartScene", 0.667f);
+        }
+    }
+
+    void InvokeStartScene()
+    {
+        GameObject.Find("TouchToStart").GetComponent<Button>().enabled = true;
+    }
+
+    void Update()
+    {
+        character = GameObject.FindGameObjectWithTag("Player");
+    }
 
     // touch to start
     public void ChangeLobbyScene()
     {
-        SceneManager.LoadScene("CharacterChoice");
+        SceneManager.LoadScene("CharChoice");
     }
 
     // pause, resume 버튼
@@ -45,6 +67,7 @@ public class UiEvent : MonoBehaviour
             UIBtn.SetActive(true);
             PauseBtn.SetActive(true);
             ActPauseBtn.SetActive(false);
+            character.GetComponent<AttackControl>().AttackBtnInit();
             //Time.timeScale = 1.0f;  // 시간흐름 비율 원래대로
             //pauseOn = false;    // 일시정지 해제
         //}
@@ -82,6 +105,32 @@ public class UiEvent : MonoBehaviour
         else {  // 보스포탈에 들어갈 때
             GameObject.Find("BossPortalCanvas(Clone)").GetComponent<BossPortalControl>().ActivePortal();
         }
+    }
+
+    public void FAttackButtonActive()
+    {
+        if(ControllerScript.hitCheck) { // 맞는모션중이면 공격x
+            return;
+        }
+        ControllerScript.isAttack = true;
+        character.GetComponent<Animator>().Play("FAttack");
+        GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(false);
+    }
+    public void SAttackButtonActive()
+    {
+        character.GetComponent<ControllerScript>().EndHit();
+        ControllerScript.isAttack = true;
+        character.GetComponent<Animator>().SetBool("FtoS", true);
+        //character.GetComponent<Animator>().Play("SAttack");
+        GameObject.Find("UIBtn").transform.Find("SAttackBtn").gameObject.SetActive(false);
+    }
+    public void TAttackButtonActive()
+    {
+        character.GetComponent<ControllerScript>().EndHit();
+        ControllerScript.isAttack = true;
+        character.GetComponent<Animator>().SetBool("StoT", true);
+        //character.GetComponent<Animator>().Play("TAttack");
+        GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
     }
 
     // void OnApplicationQuit() 

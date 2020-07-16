@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;  // 씬매니저 사용시 선언
 
-// 캐릭터 선택창, CharacterSwitch.cs스크립트로 이름 전달
+// 캐릭터 선택창, CharacterSwitch.cs스크립트로 이름 전달, 지금은 안씀
 public class CharChoice : MonoBehaviour
 {
     public static string[] charName = new string[3];
@@ -69,7 +69,7 @@ public class CharChoice : MonoBehaviour
     {
         string nameTemp = "null";
 
-        switch(index) {
+        switch(index) { // 프리팹 이름 그대로 적으면 됨
             case 0:
                 nameTemp = "DPlayer";
                 break;
@@ -80,7 +80,7 @@ public class CharChoice : MonoBehaviour
                 nameTemp = "SPlayer";
                 break;
             case 3:
-
+                nameTemp = "Kinies";
                 break;
             case 4:
 

@@ -28,7 +28,7 @@ public class BossPortalControl : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         //transform.position = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
-        Vector3 portalVector = new Vector3(player.transform.position.x + 3f, player.transform.position.y + 2.6f);
+        Vector3 portalVector = new Vector3(player.transform.position.x + 3f, player.transform.position.y + 3.5f);
         transform.position = portalVector;
     }
 
@@ -73,7 +73,10 @@ public class BossPortalControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if(CharacterSwitch.CharCheck && other.gameObject.tag == "Player") {
-            GameObject.Find("UIBtn").transform.Find("AttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("SAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("AttackBtnImage").gameObject.SetActive(false);
             GameObject.Find("UIBtn").transform.Find("CoralActionBtn").gameObject.SetActive(true);
             UiEvent.portalCheck = true;
         }    
@@ -82,7 +85,10 @@ public class BossPortalControl : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) 
     {
         if(CharacterSwitch.CharCheck && other.gameObject.tag == "Player") {
-            GameObject.Find("UIBtn").transform.Find("AttackBtn").gameObject.SetActive(true);
+            GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(true);
+            GameObject.Find("UIBtn").transform.Find("SAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
+            GameObject.Find("UIBtn").transform.Find("AttackBtnImage").gameObject.SetActive(true);
             GameObject.Find("UIBtn").transform.Find("CoralActionBtn").gameObject.SetActive(false);
         }
     }

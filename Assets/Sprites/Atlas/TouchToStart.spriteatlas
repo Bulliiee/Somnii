@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TouchToStart
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 951138254e0b8cd4ba9b350e833ebee0, type: 3}
+    - {fileID: 2800000, guid: e78446b9b36682146b613111466d73a4, type: 3}
+    - {fileID: 2800000, guid: b58c9b7562e5b7745a86cb156daed28d, type: 3}
+    - {fileID: 2800000, guid: 028c045b4ceedf04aa1757c6fb62adc2, type: 3}
+    - {fileID: 2800000, guid: c89d36f780b82f44baa55a6a5cf1ad7c, type: 3}
+    - {fileID: 2800000, guid: 1895d3ffb0fb0b249ba7f266b1736133, type: 3}
+    - {fileID: 2800000, guid: c936d934240a936469ea6103f34b241d, type: 3}
+    - {fileID: 2800000, guid: dc9e3ccd7abcfea4fb6274b71a8cb821, type: 3}
+    - {fileID: 2800000, guid: 90217a0293c6ada40a518916adc71a3e, type: 3}
+    - {fileID: 2800000, guid: 3c0a7b663cf87da43ba1261f56dea788, type: 3}
+    - {fileID: 2800000, guid: 7236995514b531344b205e51a8a31d7b, type: 3}
+    totalSpriteSurfaceArea: 3351744
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 90217a0293c6ada40a518916adc71a3e, type: 3}
+  - {fileID: 21300000, guid: c936d934240a936469ea6103f34b241d, type: 3}
+  - {fileID: 21300000, guid: 951138254e0b8cd4ba9b350e833ebee0, type: 3}
+  - {fileID: 21300000, guid: 7236995514b531344b205e51a8a31d7b, type: 3}
+  - {fileID: 21300000, guid: b58c9b7562e5b7745a86cb156daed28d, type: 3}
+  - {fileID: 21300000, guid: 3c0a7b663cf87da43ba1261f56dea788, type: 3}
+  - {fileID: 21300000, guid: c89d36f780b82f44baa55a6a5cf1ad7c, type: 3}
+  - {fileID: 21300000, guid: e78446b9b36682146b613111466d73a4, type: 3}
+  - {fileID: 21300000, guid: 028c045b4ceedf04aa1757c6fb62adc2, type: 3}
+  - {fileID: 21300000, guid: dc9e3ccd7abcfea4fb6274b71a8cb821, type: 3}
+  - {fileID: 21300000, guid: 1895d3ffb0fb0b249ba7f266b1736133, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - TTS08
+  - TTS06
+  - TTS00
+  - TTS10
+  - TTS02
+  - TTS09
+  - TTS04
+  - TTS01
+  - TTS03
+  - TTS07
+  - TTS05
+  m_Tag: TouchToStart
+  m_IsVariant: 0

@@ -29,36 +29,40 @@ public class ObjectClocking : MonoBehaviour
 
     void Dark() 
     {
-            Color color = spr.color;
-            color.a -=  0.1f;
-            spr.color = color;
+        Color color = spr.color;
+        color.a -=  0.1f;
+        spr.color = color;
 
-            if(spr.color.a <= 0.75f) {
-                isDone = true;
-            }
+        if(spr.color.a <= 0.75f) {
+            isDone = true;
+        }
     }
 
     void Transparent()
     {
-            Color color = spr.color;
-            color.a +=  0.1f;
-            spr.color = color;
+        Color color = spr.color;
+        color.a +=  0.1f;
+        spr.color = color;
 
-            if(spr.color.a >= 1f) {
-                isDone = true;
-            }
+        if(spr.color.a >= 1f) {
+            isDone = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.gameObject.tag == "Player") {
+            spr.sortingLayerName = "UptoChar";
             isCollide = true;
             isDone = false;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.tag == "Player") {
+    private void OnTriggerExit2D(Collider2D other) 
+    {
+        if(other.gameObject.tag == "Player") 
+        {
+            spr.sortingLayerName = "UnderUIBtn";
             isCollide = false;
             isDone = false;
         }

@@ -1,0 +1,614 @@
+fileFormatVersion: 2
+guid: 0ef15ba4b3e71b04eb5045ae4a70f15e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2790702778790537221
+    second: Kinies_Wepon_0
+  - first:
+      213: 8720792435860799640
+    second: Kinies_Wepon_1
+  - first:
+      213: 4894050201093213076
+    second: Kinies_Wepon_2
+  - first:
+      213: 2166589394583369073
+    second: Kinies_Wepon_3
+  - first:
+      213: -8671345076875519698
+    second: Kinies_Wepon_4
+  - first:
+      213: 5371608249205472968
+    second: Kinies_Wepon_5
+  - first:
+      213: -8023962161727807490
+    second: Kinies_Wepon_6
+  - first:
+      213: 8841664841657277857
+    second: Kinies_Wepon_7
+  - first:
+      213: 969040654841438978
+    second: Kinies_Wepon_8
+  - first:
+      213: -2638596370083031839
+    second: Kinies_Wepon_9
+  - first:
+      213: 8318338549943602830
+    second: Kinies_Wepon_10
+  - first:
+      213: -9217065468001146460
+    second: Kinies_Wepon_11
+  - first:
+      213: -2605177893938307791
+    second: Kinies_Wepon_12
+  - first:
+      213: -9179202208808331164
+    second: Kinies_Wepon_13
+  - first:
+      213: -1699521659806662729
+    second: Kinies_Wepon_14
+  - first:
+      213: -2192197196246838912
+    second: Kinies_Wepon_15
+  - first:
+      213: 7439153235890434617
+    second: Kinies_Wepon_16
+  - first:
+      213: -7421037198365635092
+    second: Kinies_Wepon_17
+  - first:
+      213: 9132301107877171687
+    second: Kinies_Wepon_18
+  - first:
+      213: -6017954527984637234
+    second: Kinies_Wepon_0
+  - first:
+      213: -2774906015704873211
+    second: Kinies_Wepon_1
+  - first:
+      213: -7043276562870592884
+    second: Kinies_Wepon_2
+  - first:
+      213: -3953059800404057576
+    second: Kinies_Wepon_3
+  - first:
+      213: -2341358584978869193
+    second: Kinies_Wepon_4
+  - first:
+      213: 2560427772979810652
+    second: Kinies_Wepon_5
+  - first:
+      213: 1871042798442269157
+    second: Kinies_Wepon_11
+  - first:
+      213: -6734669446428902514
+    second: Kinies_Wepon_12
+  - first:
+      213: -8455902963233424229
+    second: Kinies_Wepon_13
+  - first:
+      213: 1231373869459664528
+    second: Kinies_Wepon_14
+  - first:
+      213: 6543892313072333449
+    second: Kinies_Wepon_15
+  - first:
+      213: -6732569707014562847
+    second: Kinies_Wepon_16
+  - first:
+      213: -4238958243848607147
+    second: Kinies_Wepon_17
+  - first:
+      213: -2828639341918837103
+    second: Kinies_Wepon_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 26
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kinies_Wepon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaa505cd3eeb7ca0800000000000000
+      internalID: -6017954527984637234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 318
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50701d84ead8d79d0800000000000000
+      internalID: -2774906015704873211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 318
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a934f6841414e90800000000000000
+      internalID: -7043276562870592884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_3
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 318
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8122a054e09e329c0800000000000000
+      internalID: -3953059800404057576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_4
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 318
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734f582a5c2d18fd0800000000000000
+      internalID: -2341358584978869193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5191896e77788320800000000000000
+      internalID: 2560427772979810652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 212
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effd90b3de825a090800000000000000
+      internalID: -8023962161727807490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 212
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adda0e0457e3ba70800000000000000
+      internalID: 8841664841657277857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 212
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2036cb46759b27d00800000000000000
+      internalID: 969040654841438978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_9
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 212
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4d09fc492d16bd0800000000000000
+      internalID: -2638596370083031839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e83d6b6dca07370800000000000000
+      internalID: 8318338549943602830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 106
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e944b0138747f910800000000000000
+      internalID: 1871042798442269157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 106
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bbdedf1d5a982a0800000000000000
+      internalID: -6734669446428902514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_13
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 106
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c7c456e0996aa80800000000000000
+      internalID: -8455902963233424229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_14
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 106
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e67da9208b61110800000000000000
+      internalID: 1231373869459664528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982f511436390da50800000000000000
+      internalID: 6543892313072333449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_16
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb57dba58b1192a0800000000000000
+      internalID: -6732569707014562847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_17
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aa0b9afe13c25c0800000000000000
+      internalID: -4238958243848607147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_Wepon_18
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 172
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196ab3b5187aeb8d0800000000000000
+      internalID: -2828639341918837103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

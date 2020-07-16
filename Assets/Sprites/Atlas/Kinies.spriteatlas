@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kinies
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+    - {fileID: 2800000, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+    - {fileID: 2800000, guid: d657c4be13888064fa26383c7419b811, type: 3}
+    - {fileID: 2800000, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+    totalSpriteSurfaceArea: 772177
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 3639779652265644814, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: 7043767488466524563, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -9215256971710534850, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: 4898322959891031513, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -7112160603948235657, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -8536781553251590321, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -3886639803745881028, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -2675759015506786787, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -8132938047156831564, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: 8113351225116388697, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: -3735335196026612412, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: 4187227842115479284, guid: 2cb1c3600fefe514382d85b59941f053, type: 3}
+  - {fileID: 7439153235890434617, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -7421037198365635092, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -1699521659806662729, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -2192197196246838912, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -2605177893938307791, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -9179202208808331164, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 8318338549943602830, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -9217065468001146460, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 9132301107877171687, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 2166589394583369073, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 4894050201093213076, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 8720792435860799640, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -2790702778790537221, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 8841664841657277857, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -8023962161727807490, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 5371608249205472968, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -8671345076875519698, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: -2638596370083031839, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 969040654841438978, guid: 0ef15ba4b3e71b04eb5045ae4a70f15e, type: 3}
+  - {fileID: 6512905318914483127, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 5424495585044568316, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 3755795735151973290, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 7201867581743838771, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 6316163676189706118, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -9089149042622469514, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -5301922299653652354, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 216742609735765329, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -610244139112318904, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 5167763960941729785, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 8681794568806682387, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 1847192834996729816, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -4109435175548393499, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 4145823240139920693, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -8561220604126256627, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 8646893049165838168, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -5042886401269860205, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 1423439372420885323, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -1570591484846003300, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -6336040206685649962, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -7896113337099032158, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 4445592618022706829, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -5936853287613036876, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 6365516581843893903, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 6524475733020788606, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 7721230891196189724, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -3964266519540932805, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -3464104619220047178, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 7572700918314748632, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: -8932568372723421821, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 2896877681175664940, guid: 6159d37de4640c8499335c3e14d7e1bc, type: 3}
+  - {fileID: 6615809360721382399, guid: d657c4be13888064fa26383c7419b811, type: 3}
+  - {fileID: -7301551597988428044, guid: d657c4be13888064fa26383c7419b811, type: 3}
+  - {fileID: 4730016327189084328, guid: d657c4be13888064fa26383c7419b811, type: 3}
+  - {fileID: 3532037954637766384, guid: d657c4be13888064fa26383c7419b811, type: 3}
+  - {fileID: 5602824212379343892, guid: d657c4be13888064fa26383c7419b811, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Kinies_Effect1_11
+  - Kinies_Effect1_10
+  - Kinies_Effect1_8
+  - Kinies_Effect1_9
+  - Kinies_Effect1_0
+  - Kinies_Effect1_1
+  - Kinies_Effect1_2
+  - Kinies_Effect1_3
+  - Kinies_Effect1_4
+  - Kinies_Effect1_5
+  - Kinies_Effect1_6
+  - Kinies_Effect1_7
+  - Kinies_Wepon_16
+  - Kinies_Wepon_17
+  - Kinies_Wepon_14
+  - Kinies_Wepon_15
+  - Kinies_Wepon_12
+  - Kinies_Wepon_13
+  - Kinies_Wepon_10
+  - Kinies_Wepon_11
+  - Kinies_Wepon_18
+  - Kinies_Wepon_3
+  - Kinies_Wepon_2
+  - Kinies_Wepon_1
+  - Kinies_Wepon_0
+  - Kinies_Wepon_7
+  - Kinies_Wepon_6
+  - Kinies_Wepon_5
+  - Kinies_Wepon_4
+  - Kinies_Wepon_9
+  - Kinies_Wepon_8
+  - Kinies_9
+  - Kinies_8
+  - Kinies_5
+  - Kinies_4
+  - Kinies_7
+  - Kinies_6
+  - Kinies_1
+  - Kinies_0
+  - Kinies_3
+  - Kinies_2
+  - Kinies_14
+  - Kinies_15
+  - Kinies_16
+  - Kinies_17
+  - Kinies_10
+  - Kinies_11
+  - Kinies_12
+  - Kinies_13
+  - Kinies_18
+  - Kinies_19
+  - Kinies_29
+  - Kinies_28
+  - Kinies_30
+  - Kinies_25
+  - Kinies_24
+  - Kinies_27
+  - Kinies_26
+  - Kinies_21
+  - Kinies_20
+  - Kinies_23
+  - Kinies_22
+  - Kinies_Effect2_4
+  - Kinies_Effect2_3
+  - Kinies_Effect2_2
+  - Kinies_Effect2_1
+  - Kinies_Effect2_0
+  m_Tag: Kinies
+  m_IsVariant: 0

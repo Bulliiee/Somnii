@@ -13,7 +13,7 @@ public class CharacterSwitch : MonoBehaviour
 
     public float[] currentCharHp = new float[3];   // 캐릭터들의 HP 저장
     private float[] maxCharHP = new float[3];
-    private int charIndex = 0;  // 캐릭터 인덱스
+    public int charIndex = 0;  // 캐릭터 인덱스
 
     public static bool CharCheck = true;   // 캐릭터가 바뀌는 순간(캐릭터 없을 때 false)
                                             //캐릭터 체크하는기능 off시키기 위함(ture일 때만 체크)
@@ -23,13 +23,61 @@ public class CharacterSwitch : MonoBehaviour
     void Start()
     {
         for(int i = 0; i < 3; i++) {    // 캐릭터와 초상화 프리팹 잇기
-            SwitchPlayer[i] = Resources.Load<GameObject>("Prefabs/Character/" + CharChoice.charName[i]);
-            CharPortrait[i] = Resources.Load<GameObject>("Prefabs/Character/" + CharChoice.charName[i] + "_Portrait");
+            SwitchPlayer[i] = Resources.Load<GameObject>("Prefabs/Character/" + CharChoiceCtrl.charName[i]);
+            CharPortrait[i] = Resources.Load<GameObject>("Prefabs/Character/" + CharChoiceCtrl.charName[i] + "_Portrait");
             currentCharHp[i] = SwitchPlayer[i].GetComponent<ControllerScript>().HP; // 각 캐릭터의 HP저장
             maxCharHP[i] = currentCharHp[i];
         }
         
         PrefabInst();
+    }
+
+    void Update()
+    {
+        if(currentCharHp[charIndex] <= 0 && CharCheck) {    // 현재 캐릭터 죽었을 때 일어나는 일
+            int deathCount = 0; // 캐릭터들 죽은 마릿수 체크, 3이면 전멸임
+
+            GameObject.Find("CharStat_" + charIndex).transform.GetChild(2).gameObject.SetActive(true);  // 자물쇠이미지켜기
+            GameObject.Find("CharStat_" + charIndex).transform.GetChild(3).gameObject.SetActive(false); // 초상화 끄기
+            GameObject.Find("CharStat_" + charIndex).GetComponent<Button>().enabled = false;    // 버튼못누르게 끄기
+
+            for(int i = 0; i < 3; i++) {    // 모든 캐릭터 체력 체크해서 모두 0보다 작으면 게임오버
+                if(currentCharHp[i] < 0) {
+                    deathCount++;
+                }
+                if(deathCount == 3) {
+                    Debug.Log("GameOver(All Characters Are Died");
+                }
+            }      
+            
+            if(charIndex == 0) {
+                if(currentCharHp[1] > 0) {
+                    CharacterSwitchButton(1);
+                }
+                else if(currentCharHp[2] > 0) {
+                    CharacterSwitchButton(2);
+                }
+            }
+            else if(charIndex == 1) {
+                if(currentCharHp[2] > 0) {
+                    CharacterSwitchButton(2);
+                }
+                else if(currentCharHp[0] > 0) {
+                    CharacterSwitchButton(0);
+                }
+            }
+            else if(charIndex == 2) {
+                if(currentCharHp[0] > 0) {
+                    CharacterSwitchButton(0);
+                }
+                else if(currentCharHp[1] > 0) {
+                    CharacterSwitchButton(1);
+                }
+            }
+            else {
+                Debug.Log("charIndex ERROR!!");
+            }
+        }
     }
     
     // 맞을 때
@@ -61,7 +109,7 @@ public class CharacterSwitch : MonoBehaviour
         Debug.Log("CurrentPlayer name: " + currentPlayer.name);
         Debug.Log("SwitchPlayer name: " + SwitchPlayer[index].name);
 
-        if(currentPlayer.name == SwitchPlayer[index].name) {
+        if(currentPlayer.name == SwitchPlayer[index].name || currentPlayer.name == SwitchPlayer[index].name + "(Clone)") {
             Debug.Log("Can't Change Player!!");
             return;
         }

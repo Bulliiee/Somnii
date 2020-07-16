@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: 6159d37de4640c8499335c3e14d7e1bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 216742609735765329
+    second: Kinies_0
+  - first:
+      213: -5301922299653652354
+    second: Kinies_1
+  - first:
+      213: 5167763960941729785
+    second: Kinies_2
+  - first:
+      213: -610244139112318904
+    second: Kinies_3
+  - first:
+      213: 7201867581743838771
+    second: Kinies_4
+  - first:
+      213: 3755795735151973290
+    second: Kinies_5
+  - first:
+      213: -9089149042622469514
+    second: Kinies_6
+  - first:
+      213: 6316163676189706118
+    second: Kinies_7
+  - first:
+      213: 5424495585044568316
+    second: Kinies_8
+  - first:
+      213: 6512905318914483127
+    second: Kinies_9
+  - first:
+      213: -8561220604126256627
+    second: Kinies_10
+  - first:
+      213: 8646893049165838168
+    second: Kinies_11
+  - first:
+      213: -5042886401269860205
+    second: Kinies_12
+  - first:
+      213: 1423439372420885323
+    second: Kinies_13
+  - first:
+      213: 8681794568806682387
+    second: Kinies_14
+  - first:
+      213: 1847192834996729816
+    second: Kinies_15
+  - first:
+      213: -4109435175548393499
+    second: Kinies_16
+  - first:
+      213: 4145823240139920693
+    second: Kinies_17
+  - first:
+      213: -1570591484846003300
+    second: Kinies_18
+  - first:
+      213: -6336040206685649962
+    second: Kinies_19
+  - first:
+      213: 7572700918314748632
+    second: Kinies_20
+  - first:
+      213: -3464104619220047178
+    second: Kinies_21
+  - first:
+      213: 2896877681175664940
+    second: Kinies_22
+  - first:
+      213: -8932568372723421821
+    second: Kinies_23
+  - first:
+      213: 6524475733020788606
+    second: Kinies_24
+  - first:
+      213: 6365516581843893903
+    second: Kinies_25
+  - first:
+      213: -3964266519540932805
+    second: Kinies_26
+  - first:
+      213: 7721230891196189724
+    second: Kinies_27
+  - first:
+      213: 4445592618022706829
+    second: Kinies_28
+  - first:
+      213: -7896113337099032158
+    second: Kinies_29
+  - first:
+      213: -5936853287613036876
+    second: Kinies_30
+  - first:
+      213: 3845280647702214753
+    second: Kinies_31
+  - first:
+      213: -8847810515409345652
+    second: Kinies_32
+  - first:
+      213: -3336632286155407358
+    second: Kinies_33
+  - first:
+      213: -1699880565658194104
+    second: Kinies_34
+  - first:
+      213: -7662281107335737123
+    second: Kinies_35
+  - first:
+      213: 4455558042148798052
+    second: Kinies_0
+  - first:
+      213: 5232031098998525650
+    second: Kinies_1
+  - first:
+      213: 8640579174566704206
+    second: Kinies_2
+  - first:
+      213: -8929196300145512082
+    second: Kinies_3
+  - first:
+      213: -6813851410783035826
+    second: Kinies_4
+  - first:
+      213: -7300136520858281239
+    second: Kinies_5
+  - first:
+      213: -8977408623353303424
+    second: Kinies_6
+  - first:
+      213: 1350203907187307820
+    second: Kinies_7
+  - first:
+      213: 6945919844144666793
+    second: Kinies_8
+  - first:
+      213: -6492729765701200152
+    second: Kinies_9
+  - first:
+      213: 4128972775821583375
+    second: Kinies_10
+  - first:
+      213: -6273055663407527437
+    second: Kinies_11
+  - first:
+      213: -8643336014589022939
+    second: Kinies_12
+  - first:
+      213: 2496014990793717905
+    second: Kinies_13
+  - first:
+      213: -7611270070273784263
+    second: Kinies_14
+  - first:
+      213: -2817323369104326640
+    second: Kinies_15
+  - first:
+      213: -9034392254961853829
+    second: Kinies_16
+  - first:
+      213: -3448683371760702080
+    second: Kinies_17
+  - first:
+      213: -5062742230747667407
+    second: Kinies_18
+  - first:
+      213: -1895892678019252594
+    second: Kinies_19
+  - first:
+      213: -8781245388562177872
+    second: Kinies_20
+  - first:
+      213: 7418877154826891910
+    second: Kinies_21
+  - first:
+      213: 3706120649897118359
+    second: Kinies_22
+  - first:
+      213: 1638891330491104790
+    second: Kinies_23
+  - first:
+      213: -3404242244068281357
+    second: Kinies_24
+  - first:
+      213: 1829418552084274244
+    second: Kinies_25
+  - first:
+      213: 8069516651507104297
+    second: Kinies_26
+  - first:
+      213: 4298276565829198215
+    second: Kinies_27
+  - first:
+      213: -5183726293348551168
+    second: Kinies_28
+  - first:
+      213: -2943238414866508298
+    second: Kinies_29
+  - first:
+      213: -7453040942458272245
+    second: Kinies_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 26
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kinies_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef96ace6255dd30800000000000000
+      internalID: 4455558042148798052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de8a956098eb9840800000000000000
+      internalID: 5232031098998525650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44bfa1caf089e770800000000000000
+      internalID: 8640579174566704206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e613810264f151480800000000000000
+      internalID: -8929196300145512082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e9bf34e365071a0800000000000000
+      internalID: -6813851410783035826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 315
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ead2661384b0ba90800000000000000
+      internalID: -7300136520858281239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e6f71eb66d96380800000000000000
+      internalID: -8977408623353303424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c257e36cc43ecb210800000000000000
+      internalID: 1350203907187307820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_8
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a854941c4dd46060800000000000000
+      internalID: 6945919844144666793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e656c49da035e5a0800000000000000
+      internalID: -6492729765701200152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04aa160dde0d4930800000000000000
+      internalID: 4128972775821583375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 252
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f987563c11a1f8a0800000000000000
+      internalID: -6273055663407527437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52da41860b3bc0880800000000000000
+      internalID: -8643336014589022939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1983f40e860a3a220800000000000000
+      internalID: 2496014990793717905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936c4c382365f5690800000000000000
+      internalID: -7611270070273784263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_15
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0104127925bd6e8d0800000000000000
+      internalID: -2817323369104326640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_16
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a55714c146f9280800000000000000
+      internalID: -9034392254961853829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 189
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d286bceb0d320d0800000000000000
+      internalID: -3448683371760702080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134aae2c3c68db9b0800000000000000
+      internalID: -5062742230747667407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_19
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ef56a77af60b5e0800000000000000
+      internalID: -1895892678019252594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0e63918dfb22680800000000000000
+      internalID: -8781245388562177872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_21
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682b7b5277525f660800000000000000
+      internalID: 7418877154826891910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_22
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a8bdf5819ce6330800000000000000
+      internalID: 3706120649897118359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_23
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 126
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eb36b5bf28eb610800000000000000
+      internalID: 1638891330491104790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f37ee827b3b1c0d0800000000000000
+      internalID: -3404242244068281357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c1e7efa76636910800000000000000
+      internalID: 1829418552084274244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_26
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a3e22f3aeacff60800000000000000
+      internalID: 8069516651507104297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_27
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781a2ac63cb86ab30800000000000000
+      internalID: 4298276565829198215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_28
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0067b189664bf08b0800000000000000
+      internalID: -5183726293348551168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_29
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 63
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.265, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5199071448727d0800000000000000
+      internalID: -2943238414866508298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kinies_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 83
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2347, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06055030ca719890800000000000000
+      internalID: -7453040942458272245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
