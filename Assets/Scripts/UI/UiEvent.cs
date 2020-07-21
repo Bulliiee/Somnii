@@ -13,7 +13,9 @@ public class UiEvent : MonoBehaviour
     public GameObject ActPauseBtn;   // pause 활성화시
     public GameObject QuitApp;  // QuitBtn 누를시 나타나는 패널
 
+    public JoyStickSetting joystick;    // 조이스틱 입력받은거 받아오기 위한 스크립트
     public GameObject character;    // 현재 캐릭터 게임오브젝트
+    private Vector3 _moveVector;    // 조이스틱으로 입력받은 벡터값 저장 위함
 
     public static bool portalCheck = false; // true: 보스룸 포탈 클릭, false: 일반 룸 포탈 클릭
                                             // 포탈컨트롤 스크립트들에서 참조
@@ -27,6 +29,8 @@ public class UiEvent : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Start") { // 스타트씬일때
             Invoke("InvokeStartScene", 0.667f);
         }
+        joystick = GameObject.Find("JoyStickPanel").GetComponent<JoyStickSetting>();
+        _moveVector = Vector3.zero;
     }
 
     void InvokeStartScene()
@@ -107,6 +111,7 @@ public class UiEvent : MonoBehaviour
         }
     }
 
+    // 공격버튼
     public void FAttackButtonActive()
     {
         if(ControllerScript.hitCheck) { // 맞는모션중이면 공격x
@@ -131,6 +136,38 @@ public class UiEvent : MonoBehaviour
         character.GetComponent<Animator>().SetBool("StoT", true);
         //character.GetComponent<Animator>().Play("TAttack");
         GameObject.Find("UIBtn").transform.Find("TAttackBtn").gameObject.SetActive(false);
+    }
+
+    public void HandleInput()
+    {
+        _moveVector = poolInput();
+    }
+
+    public Vector3 poolInput()
+    {
+        float h = joystick.GetHorizontalValue();
+        float v = joystick.GetVerticalValue();    // y축 사용시 활성화
+        Vector3 moveDir = new Vector3(h, v, 0).normalized;  // y축사용시 인자(h, v, 0)
+
+        return moveDir;
+    }
+
+    public void EvasionButtonActive()
+    {
+        HandleInput();
+        if(_moveVector.x < 0) { // 이동벡터 x값 음수면
+            transform.localScale = new Vector3(-1f, 1f);
+        }
+        else if(_moveVector.x > 0) {    // 이동벡터 x값 양수면
+            transform.localScale = new Vector3(1f, 1f);
+        }
+        else if(_moveVector.x == 0 && _moveVector.y == 0) { // 이동벡터값 없으면
+
+        }
+
+        for(int i = 0; i < 10; i++) {
+            character.transform.position = Vector3.MoveTowards(character.transform.position, character.transform.position + _moveVector * 2f, 0.1f);
+        }
     }
 
     // void OnApplicationQuit() 

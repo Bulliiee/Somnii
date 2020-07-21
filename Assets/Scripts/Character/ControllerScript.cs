@@ -75,7 +75,7 @@ public class ControllerScript : MonoBehaviour
     {
         float h = joystick.GetHorizontalValue();
         float v = joystick.GetVerticalValue();    // y축 사용시 활성화
-        Vector3 moveDir = new Vector3(h, v, 0).normalized;  // y축사용시 인자(h, v, 0)
+        Vector3 moveDir = new Vector3(h, v, 0).normalized;  // y축사용시 인자(h, v, 0), normalized 정규화 해줘야 대각선때 안빨라짐
 
         return moveDir;
     }
