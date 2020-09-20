@@ -7,18 +7,18 @@ using UnityEngine.SceneManagement;  // 씬매니저 사용시 선언
 // 각종 버튼UI 이벤트들
 public class UiEvent : MonoBehaviour
 {
-    public GameObject Book;   // 일시정지시 나타날 책, UI 오브젝트
-    public GameObject UIBtn;    // UI버튼 캔버스
-    public GameObject PauseBtn; // 평상시 pause
-    public GameObject ActPauseBtn;   // pause 활성화시
-    public GameObject QuitApp;  // QuitBtn 누를시 나타나는 패널
+    public GameObject Book;                     // 일시정지시 나타날 책, UI 오브젝트
+    public GameObject UIBtn;                    // UI버튼 캔버스
+    public GameObject PauseBtn;                 // 평상시 pause
+    public GameObject ActPauseBtn;              // pause 활성화시
+    public GameObject QuitApp;                  // QuitBtn 누를시 나타나는 패널
 
-    public JoyStickSetting joystick;    // 조이스틱 입력받은거 받아오기 위한 스크립트
-    public GameObject character;    // 현재 캐릭터 게임오브젝트
-    private Vector3 _moveVector;    // 조이스틱으로 입력받은 벡터값 저장 위함
+    public JoyStickSetting joystick;            // 조이스틱 입력받은거 받아오기 위한 스크립트
+    public GameObject character;                // 현재 캐릭터 게임오브젝트
+    private Vector3 _moveVector;                // 조이스틱으로 입력받은 벡터값 저장 위함
 
-    public static bool portalCheck = false; // true: 보스룸 포탈 클릭, false: 일반 룸 포탈 클릭
-                                            // 포탈컨트롤 스크립트들에서 참조
+    public static bool portalCheck = false;     // true: 보스룸 포탈 클릭, false: 일반 룸 포탈 클릭
+                                                // 포탈컨트롤 스크립트들에서 참조
 
                                             
     //private bool pauseOn = false;   // true: 일시정지중, false: 아님
@@ -40,7 +40,7 @@ public class UiEvent : MonoBehaviour
 
     void Update()
     {
-        character = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // touch to start
@@ -71,6 +71,7 @@ public class UiEvent : MonoBehaviour
             UIBtn.SetActive(true);
             PauseBtn.SetActive(true);
             ActPauseBtn.SetActive(false);
+            character = GameObject.FindGameObjectWithTag("Player");
             character.GetComponent<AttackControl>().AttackBtnInit();
             //Time.timeScale = 1.0f;  // 시간흐름 비율 원래대로
             //pauseOn = false;    // 일시정지 해제
@@ -117,12 +118,14 @@ public class UiEvent : MonoBehaviour
         if(ControllerScript.hitCheck) { // 맞는모션중이면 공격x
             return;
         }
+        character = GameObject.FindGameObjectWithTag("Player");
         ControllerScript.isAttack = true;
         character.GetComponent<Animator>().Play("FAttack");
         GameObject.Find("UIBtn").transform.Find("FAttackBtn").gameObject.SetActive(false);
     }
     public void SAttackButtonActive()
     {
+        character = GameObject.FindGameObjectWithTag("Player");
         character.GetComponent<ControllerScript>().EndHit();
         ControllerScript.isAttack = true;
         character.GetComponent<Animator>().SetBool("FtoS", true);
@@ -131,6 +134,7 @@ public class UiEvent : MonoBehaviour
     }
     public void TAttackButtonActive()
     {
+        character = GameObject.FindGameObjectWithTag("Player");
         character.GetComponent<ControllerScript>().EndHit();
         ControllerScript.isAttack = true;
         character.GetComponent<Animator>().SetBool("StoT", true);
@@ -154,20 +158,8 @@ public class UiEvent : MonoBehaviour
 
     public void EvasionButtonActive()
     {
-        HandleInput();
-        if(_moveVector.x < 0) { // 이동벡터 x값 음수면
-            transform.localScale = new Vector3(-1f, 1f);
-        }
-        else if(_moveVector.x > 0) {    // 이동벡터 x값 양수면
-            transform.localScale = new Vector3(1f, 1f);
-        }
-        else if(_moveVector.x == 0 && _moveVector.y == 0) { // 이동벡터값 없으면
-
-        }
-
-        for(int i = 0; i < 10; i++) {
-            character.transform.position = Vector3.MoveTowards(character.transform.position, character.transform.position + _moveVector * 2f, 0.1f);
-        }
+        character = GameObject.FindGameObjectWithTag("Player");
+        character.GetComponent<ControllerScript>().isDash = true;
     }
 
     // void OnApplicationQuit() 

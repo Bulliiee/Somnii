@@ -13,17 +13,17 @@ public class ClearCheck : MonoBehaviour
     public GameObject bossPortal;
     public GameObject stageClearText;
 
-    public static int[,] roomCheckArr = new int[4,4];    // 클리어 한 룸 체크용 2차원배열, 1이면 클리어한 룸, 0이면반대
-    public static bool bossRoomCheck = false; // 보스룸 입장시 true
-    public static bool isClear = false; // PortalControl.cs에서 참조
+    public static int[,] roomCheckArr = new int[4,4];       // 클리어 한 룸 체크용 2차원배열, 1이면 클리어한 룸, 0이면반대
+    public static bool bossRoomCheck = false;               // 보스룸 입장시 true
+    public static bool isClear = false;                     // PortalControl.cs에서 참조
 
-    private int boundFirstNumber; // 현재 Bound의 첫 번째 번호
-    private int boundSecondNumber;  // 현재 Bound의 두 번째 번호
-    private int stageCount = 0; // 클리어한 룸의 갯수, 16이 되면 스테이지 클리어
-    private int lineCount = 0;  // 완성된 라인 수 체크
+    private int boundFirstNumber;                           // 현재 Bound의 첫 번째 번호
+    private int boundSecondNumber;                          // 현재 Bound의 두 번째 번호
+    private int stageCount = 0;                             // 클리어한 룸의 갯수, 16이 되면 스테이지 클리어
+    private int lineCount = 0;                              // 완성된 라인 수 체크
 
-    private bool updateControl = true; // Update() 컨트롤용 //  //  //  //
-    private bool isAllRoomsClear = false;   // 모든 룸을 클리어시 true
+    private bool updateControl = true;                      // Update() 컨트롤용 //  //  //  //
+    private bool isAllRoomsClear = false;                   // 모든 룸을 클리어시 true
 
     // 첫 스타트 Room00(Bound00)에서 시작
     public static string boundName = "Bound00"; // CameraController.cs, ControllerScript.cs에서 참조

@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
 
     private float halfWidth;
     private float halfHeight;
-    private float smoothTimeX = 0.15f, smoothTimeY = 0.1f;  // 카메라 부드럽게 따라오게 하는 정도
+    public float smoothTimeX = 0.15f, smoothTimeY = 0.1f;  // 카메라 부드럽게 따라오게 하는 정도
 
     public static bool isClear = false; // Portal 스크립트에서 참조
 

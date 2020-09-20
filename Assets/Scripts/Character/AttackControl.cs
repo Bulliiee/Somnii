@@ -137,4 +137,16 @@ public class AttackControl : MonoBehaviour
             enemyCtrl.HP -= damage;
         }
     }
+
+
+    // Engineer 3타후 위치이동(애니메이션 이벤트)
+    public void EngineerSetPosition()
+    {
+        if(transform.localScale.x > 0) {
+            transform.position = new Vector3(transform.position.x - 2.039f, transform.position.y);
+        }
+        else {
+            transform.position = new Vector3(transform.position.x + 2.039f, transform.position.y);
+        }
+    }
 }

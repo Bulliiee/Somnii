@@ -56,7 +56,35 @@ public class CharChoiceCtrl : MonoBehaviour
     // 이미지 클릭할 떄
     public void CharImgClick(GameObject charSpr)    // 캐릭터 클릭시 스텟창보여줌
     {
+        if(skillStatPanel.activeSelf) { // 스킬설명창 켜져있으면 스텟창 안켜지게하기 위함
+            return;
+        }
         charStatPanel.SetActive(true);
+
+        switch(charSpr.name) {
+            case "Kinies":
+                charStatPanel.transform.Find("HeartText").gameObject.GetComponent<Text>().text = "150";
+                charStatPanel.transform.Find("ShieldText").gameObject.GetComponent<Text>().text = "0";
+                charStatPanel.transform.Find("SwardText").gameObject.GetComponent<Text>().text = "1";
+                charStatPanel.transform.Find("ShoesText").gameObject.GetComponent<Text>().text = "4";
+                charStatPanel.transform.Find("OppositionText").gameObject.GetComponent<Text>().text = "적대 관계 없음";
+                break;
+            case "Engineer":
+                charStatPanel.transform.Find("HeartText").gameObject.GetComponent<Text>().text = "200";
+                charStatPanel.transform.Find("ShieldText").gameObject.GetComponent<Text>().text = "0";
+                charStatPanel.transform.Find("SwardText").gameObject.GetComponent<Text>().text = "1";
+                charStatPanel.transform.Find("ShoesText").gameObject.GetComponent<Text>().text = "4";
+                charStatPanel.transform.Find("OppositionText").gameObject.GetComponent<Text>().text = "바스, 포이어";
+                break;
+            default:
+                charStatPanel.transform.Find("HeartText").gameObject.GetComponent<Text>().text = ".";
+                charStatPanel.transform.Find("ShieldText").gameObject.GetComponent<Text>().text = ".";
+                charStatPanel.transform.Find("SwardText").gameObject.GetComponent<Text>().text = ".";
+                charStatPanel.transform.Find("ShoesText").gameObject.GetComponent<Text>().text = ".";
+                charStatPanel.transform.Find("OppositionText").gameObject.GetComponent<Text>().text = ".";
+                break;
+        }
+
         Debug.Log("Character Img Click");
     }
     public void CharacterBoxClick(int index)    // 캐릭터박스 클릭시 캐릭터의 스킬 선택가능
@@ -80,11 +108,16 @@ public class CharChoiceCtrl : MonoBehaviour
                 Kiskill0.transform.localPosition = new Vector3(0f, 0f);
                 Debug.Log("Kinies CharBox Click");
                 break;
+            case "Engineer":
+                GameObject Enskill0 = Instantiate(GameObject.Find("EngineerSkill0"));
+
+                Enskill0.name = "EngineerSkill0";
+                Enskill0.transform.parent = SkillBox[0].transform;
+                Enskill0.transform.localPosition = new Vector3(0f, 0f);
+                Debug.Log("Engineer CharBox Click");
+                break;
             case "Nasci":
                 Debug.Log("Nasci CharBox Click");
-                break;
-            case "Mechane":
-                Debug.Log("Mechane CharBox Click");
                 break;
             case "Poier":
                 Debug.Log("Poier CharBox Click");
@@ -121,6 +154,9 @@ public class CharChoiceCtrl : MonoBehaviour
     }
     public void SkillBoxImgClick(int index) // 스킬박스 클릭시 스킬 스텟창 보여줌
     {
+        if(charStatPanel.activeSelf) { // 스텟창 켜져있으면 스킬창 안켜지게하기 위함
+            return;
+        }
         if(SkillBox[index].transform.childCount < 1) {  // 아무것도 없는 박스 클릭하면 그냥 리턴
             return;
         }

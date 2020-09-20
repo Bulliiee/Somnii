@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: d657c4be13888064fa26383c7419b811
+guid: f3444df75a8dcd743a7edb366d5cd678
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5602824212379343892
-    second: Kinies_Effect2_0
-  - first:
-      213: 3532037954637766384
-    second: Kinies_Effect2_1
-  - first:
-      213: 4730016327189084328
-    second: Kinies_Effect2_2
-  - first:
-      213: -7301551597988428044
-    second: Kinies_Effect2_3
-  - first:
-      213: 6615809360721382399
-    second: Kinies_Effect2_4
+      213: 8703183049364154096
+    second: BookUI_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -60,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kinies_Effect2_0
+      name: BookUI_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 94
-        width: 165
-        height: 94
+        x: 51
+        y: 7
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,92 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c14d5afea31cd40800000000000000
-      internalID: 5602824212379343892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kinies_Effect2_1
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 94
-        width: 165
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fe91636ec1540130800000000000000
-      internalID: 3532037954637766384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kinies_Effect2_2
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 94
-        width: 165
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a837e3f9c464a140800000000000000
-      internalID: 4730016327189084328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kinies_Effect2_3
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 94
-        width: 165
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f6c6b4c18dabaa90800000000000000
-      internalID: -7301551597988428044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kinies_Effect2_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 165
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffb808fbf8310db50800000000000000
-      internalID: 6615809360721382399
+      spriteID: 0f62d883fdae7c870800000000000000
+      internalID: 8703183049364154096
       vertices: []
       indices: 
       edges: []

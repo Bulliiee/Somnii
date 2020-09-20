@@ -7,20 +7,25 @@ using UnityEngine.EventSystems;
 // 캐릭터들의 공통 움직임 컨트롤
 public class ControllerScript : MonoBehaviour
 {
-    public JoyStickSetting joystick;   // JoyStick 스크립트
-    public float HP = 100.0f;   // 체력(inspector에서 개별 조정 필요, CharacterSwitch.cs에서 체력바 조절)
+    public JoyStickSetting joystick;                // JoyStick 스크립트
+    public CameraController cameraScript;
+    public float HP = 100.0f;                       // 체력(inspector에서 개별 조정 필요, CharacterSwitch.cs에서 체력바 조절)
     public float MoveSpeed = 4f;
-    public float[] attackDamage = new float[3]; // [0]: FAttack, [1]: SAttack, [2]: TAttack Damage
+    public float[] attackDamage = new float[3];     // [0]: FAttack, [1]: SAttack, [2]: TAttack Damage
 
-    private Vector3 _moveVector;    // 플레이어 이동벡터
-    private Transform _transform;   // 플레이어 트랜스폼
-    private SpriteRenderer charRenderer;    // 캐릭터의 스프라이트 렌더러 가져옴
-    private Animator animator;  // 애니메이터 가져오기
+    private Vector3 _moveVector;                    // 플레이어 이동벡터
+    private Transform _transform;                   // 플레이어 트랜스폼
+    private SpriteRenderer charRenderer;            // 캐릭터의 스프라이트 렌더러 가져옴
+    private Animator animator;                      // 애니메이터 가져오기
+    private Rigidbody2D rb2D;
 
-    public static bool isClear = false; // Portal 스크립트에서 참조
-    public static bool hitCheck = false;    // 맞는 모션동안(ture)은 무적, 맞는 모션 끝나면 false
-                                            // enemy들의 각 스크립트에서 참조
-    public static bool isAttack = false;    // t: 공격중, f: 공격안하는중, t일때는 움직임 제한하는 플래그, UIEvent.cs, AttackControl.cs
+    public static bool isClear = false;             // Portal 스크립트에서 참조
+    public static bool hitCheck = false;            // 맞는 모션동안(ture)은 무적, 맞는 모션 끝나면 false
+                                                    // enemy들의 각 스크립트에서 참조
+    public static bool isAttack = false;            // t: 공격중, f: 공격안하는중, t일때는 움직임 제한하는 플래그, UIEvent.cs, AttackControl.cs
+    public bool isDash = false;                     // t: 대쉬중
+    private float dashTime;
+    private float startDashTime = 0.05f;
 
     void OnEnable()
     {
@@ -29,10 +34,17 @@ public class ControllerScript : MonoBehaviour
         _moveVector = Vector3.zero; // 플레이어 이동벡터 초기화
         charRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        rb2D = GetComponent<Rigidbody2D>();
         // 카메라 컨트롤러 스크립트 초기화(플레이어 다시 연결)
         CameraController cameraScript = GameObject.Find("Main Camera").GetComponent<CameraController>();   
         joystick = GameObject.Find("JoyStickPanel").GetComponent<JoyStickSetting>();
         cameraScript.Init();
+        gameObject.GetComponent<AttackControl>().AttackBtnInit();
+        isClear = false;
+        hitCheck = false;
+        isAttack = false;
+
+        dashTime = startDashTime;
     }
 
     // Start is called before the first frame update
@@ -42,9 +54,9 @@ public class ControllerScript : MonoBehaviour
         // _moveVector = Vector3.zero; // 플레이어 이동벡터 초기화
         // charRenderer = GetComponent<SpriteRenderer>();
         // animator = GetComponent<Animator>();
-        attackDamage[0] = 10f;
-        attackDamage[1] = 15f;
-        attackDamage[2] = 30f;
+        // attackDamage[0] = 10f;
+        // attackDamage[1] = 15f;
+        // attackDamage[2] = 30f;
     }
 
     // Update is called once per frame
@@ -61,8 +73,24 @@ public class ControllerScript : MonoBehaviour
     void FixedUpdate()
     {
         // 플레이어 이동
-        if(!isAttack && !hitCheck) {    // 공격중이거나 맞는중에는 이동 x
+        if(!isAttack && !hitCheck && !isDash) {    // 공격중이거나 맞는중에는 이동 x
             Move();
+        }
+
+        if(isDash) {
+            if(dashTime <= 0) {
+                cameraScript.smoothTimeX = 0.15f;
+                cameraScript.smoothTimeY = 0.1f;
+                dashTime = startDashTime;
+                rb2D.velocity = Vector2.zero;
+                isDash = false;
+            }
+            else {
+                cameraScript.smoothTimeX = 0.3f;
+                cameraScript.smoothTimeY = 0.2f;
+                dashTime -= Time.deltaTime;
+                rb2D.velocity = _moveVector * 32f;
+            }
         }
     }
 
@@ -82,7 +110,10 @@ public class ControllerScript : MonoBehaviour
 
     public void Move()
     {
-        
+        if(GameObject.Find("CameraCanvas").transform.GetChild(0).gameObject.activeSelf) {
+            return;
+        }
+
         if(_moveVector.x < 0) { // 이동하는 x축벡터값 음수면
             if(!WeponControl.nowAttack) {   // 공격중이 아니라면
                 //charRenderer.flipX = true;  // 스프라이트 플립

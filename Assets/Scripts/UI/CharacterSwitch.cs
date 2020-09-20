@@ -11,13 +11,13 @@ public class CharacterSwitch : MonoBehaviour
     public Image[] HPUIImg = new Image[3];
     public Image[] HPBookImg = new Image[3];
 
-    public float[] currentCharHp = new float[3];   // 캐릭터들의 HP 저장
+    public float[] currentCharHp = new float[3];            // 캐릭터들의 HP 저장
     private float[] maxCharHP = new float[3];
-    public int charIndex = 0;  // 캐릭터 인덱스
+    public int charIndex = 0;                               // 캐릭터 인덱스
 
-    public static bool CharCheck = true;   // 캐릭터가 바뀌는 순간(캐릭터 없을 때 false)
-                                            //캐릭터 체크하는기능 off시키기 위함(ture일 때만 체크)
-                                            // ex) PortalControl.cs
+    public static bool CharCheck = true;                    // 캐릭터가 바뀌는 순간(캐릭터 없을 때 false)
+                                                            //캐릭터 체크하는기능 off시키기 위함(ture일 때만 체크)
+                                                            // ex) PortalControl.cs
 
     // Start is called before the first frame update
     void Start()
